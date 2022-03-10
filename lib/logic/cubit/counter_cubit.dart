@@ -1,15 +1,11 @@
+import 'dart:async';
+
 import 'package:bloc/bloc.dart';
-import 'package:equatable/equatable.dart';
-import 'package:meta/meta.dart';
+import 'package:bloc_qweqwe/logic/cubit/internet_cubit.dart';
 
 part 'counter_state.dart';
 
 class CounterCubit extends Cubit<CounterState> {
-
-  // CounterCubit() : super(CounterInitial());
-  //
-  // void decrement() => emit(CounterInitial().decrement());
-  // void increment() => emit(CounterInitial().increment());
 
   CounterCubit() : super(CounterState(counter: 0));
 
