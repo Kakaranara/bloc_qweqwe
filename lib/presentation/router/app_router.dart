@@ -13,24 +13,15 @@ class AppRoute {
       case '/':
         return MaterialPageRoute(
             builder: (_) =>
-                BlocProvider.value(
-                  value: _counterCubit,
-                  child: const Screen1(title: "Screen1", color: Colors.blueAccent),
-                ));
+                const Screen1(title: "Screen1", color: Colors.blueAccent));
       case '/screen2':
         return MaterialPageRoute(
             builder: (_) =>
-                BlocProvider.value(
-                  value: _counterCubit,
-                  child: const Screen2(title: "Screen2", color: Colors.yellowAccent),
-                ));
+                const Screen2(title: "Screen2", color: Colors.yellowAccent));
       case '/screen3':
         return MaterialPageRoute(
             builder: (_) =>
-                BlocProvider.value(
-                  value: _counterCubit,
-                  child: const Screen3(title: "Screen3", color: Colors.redAccent),
-                ));
+                const Screen3(title: "Screen3", color: Colors.redAccent));
       default:
         return null;
     }
